@@ -1,0 +1,23 @@
+.getStarted__section {
+    margin: 2rem 0;
+}
+
+.getStarted__section h2 {
+    width: 100%;
+    padding-bottom: 0;
+    color: var(--orange);
+}
+
+.getStarted__label {
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+.getStarted__input {
+    margin-top: 10px;
+    border: 1px solid var(--text-color);
+}
+
+.getStarted__section .contact_input-container {
+    height: auto;
+}

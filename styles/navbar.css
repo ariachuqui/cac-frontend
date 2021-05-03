@@ -1,0 +1,77 @@
+.navbar__container{
+    padding-top: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.navbar__container .navbar__bars {
+    display: none;
+}
+
+.navbar__nav-items {
+    width: 50%;
+    margin-right: 10rem;
+}
+
+.navbar__nav-items li {
+    list-style-type: none;
+}
+
+.navbar__nav-items li a {
+    color: white;
+}
+
+.navbar__nav-items li a::after {
+    content: '';
+    display: block;
+    margin-top: .1rem;
+    width: 0;
+    height: 2px;
+    background: var(--red);
+    transition: width .3s;
+}
+
+.navbar__nav-items li a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.navbar__logo {
+    height: 2.3rem;
+}
+
+/* RESPONSIVE 500 800  */
+@media screen and (max-width: 800px) {
+    .navbar__container .navbar__bars {
+        display: block;
+        color: white;
+        cursor: pointer;
+        align-self: center;
+        transition: var(--transition);
+        font-size: 1.5rem;
+    }
+
+    .navbar__nav-items {
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        margin: 0;
+        transition: var(--transition);
+    }
+
+    .navbar__nav-items li{
+        width: 100%;
+        border-bottom: 1px solid var(--red);
+    }
+    
+    .navbar__nav-items li a {
+        color: var(--orange);
+    }
+
+    .navbar__active .navbar__nav-items {
+            height: 10.5rem;
+    }
+
+    .navbar__active .navbar__bars {
+        transform: rotate(90deg);
+    }
+}

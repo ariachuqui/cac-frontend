@@ -1,0 +1,212 @@
+
+/* =============  BACKGROUNDS ============= */
+.index__header {
+    height: 110vh;
+    background: url(../assets/home/showcase-background.svg) no-repeat center center /cover;
+}
+
+.index__our-programs {
+    padding: 50px 0 200px;
+    text-align: center;
+    background: url(../assets/home/ourPrograms-background.png) no-repeat bottom center /cover;
+}
+
+.index__suscribe {
+    background: var(--red);
+    text-align: center;
+}
+
+/* ============= SHOWCASE ============= */
+
+.index__header .navbar__nav-items li a::after {
+    background: var(--lighten-orange);
+}
+
+.index__text-container {
+    padding-top: 5rem;
+}
+
+.index__text-container p {
+    width: 33%;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.index__btn {
+    background: var(--red);
+}
+
+.index__btn:hover {
+    background: var(--orange);
+}
+
+#ball1{
+    animation: animation-ball1 3s infinite ease;
+}
+
+#ball3,
+#ball2{
+    transform: rotate(-50deg);
+    animation: animation-ball3 2.5s infinite ease;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#ball4{
+    animation: animation-ball4 3s infinite ease;
+}
+
+@keyframes animation-ball1 {
+    0% {
+        transform: translate(0rem, 0rem);
+    }
+    33%{
+        transform: translate(1.5rem, 1rem);
+    }
+    66%{
+        transform: translate(1.5rem, -2rem);
+    }
+    100% {
+        transform: translate(0rem, 0rem);
+    }
+}
+
+@keyframes animation-ball2 {
+    0% {
+        transform: rotate(-50deg);
+    }
+    50%{
+        transform: rotate(50deg);
+    }
+    100% {
+        transform: rotate(-50deg);
+    }
+}
+
+@keyframes animation-ball3 {
+    0% {
+        transform: rotate(-50deg);
+    }
+    50%{
+        transform: rotate(50deg);
+    }
+    100% {
+        transform: rotate(-50deg);
+    }
+  
+}
+
+@keyframes animation-ball4 {
+     0% {
+        transform: translate(0rem, 0rem);
+    }
+    50%{
+        transform: translate(-1.5rem, 1rem);
+    }
+    100% {
+        transform: translate(0rem, 0rem);
+    }
+}
+
+/* ============= SECTION - OUR PROGRAMS ============= */
+.index__program {
+    background: var(--light-bg);
+    flex: 1;
+    padding: 20px 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: var(--transition);
+}
+
+.index__program-title {
+    color: var(--title-color);
+    margin: 10px 0 5px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.index__program-desc {
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.index__program .btn2{
+    margin-top: 5px;
+    color: var(--red);
+    border: 1px solid var(--red);
+}
+
+.index__program .btn2:hover {
+    background: var(--red);
+    color: white;
+}
+
+/* ============= SECTION - SUSCRIBE ============= */
+
+.index__suscribe .title {
+    color: white;
+    font-size: 2.5rem;
+    padding: 50px 0 5px;
+}
+
+.index__suscribe .text {
+    color: white;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.index__suscribe .input {
+    width: 50%;
+    padding: .7rem 1rem;
+    border: 2px solid transparent;
+}
+
+.index__suscribe .btn {
+    background: var(--orange);
+    border: 2px solid transparent;
+    margin-bottom: 5rem;
+}
+
+.index__suscribe .btn:hover {
+    background: var(--red);
+    border: 2px solid var(--orange);
+    color: var(--orange);
+}
+
+/* =========== RESPONSIVE ============ */
+@media screen and (max-width: 800px) {
+    .index__header {
+        background: url(../assets/generals/navbar-background-responsive.svg) no-repeat top right;
+        height: auto;
+    }
+
+    .index__text-container {
+        padding: 0 0 4rem;
+    }
+
+    .index__text-container,
+    .index__text-container p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .index__program {
+        width: 40%;
+        flex: auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .index__program {
+        width: 100%;
+    }
+
+    .index__suscribe .input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}

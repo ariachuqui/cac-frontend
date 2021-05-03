@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/1dd9a09c54.js" crossorigin="anonymous"></script>
+    <script src="./script/main.js" defer></script>
+    <title>Energy - our programs</title>
+</head>
+<body>
+    <header class="background-navbar background-navbar-responsive">
+        <nav class="navbar__container space-between container"  id="navbar_container">
+                <a href="./index.html"><img class="navbar__logo" src="../assets/generals/logo.svg" alt="energy-logo"></a>
+                <i class="navbar__bars fas fa-bars" id="navbar_bars"></i>
+                <ul class="navbar__nav-items space-between">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../programs.html">Programas</a></li>
+                    <li><a href="../about.html">Acerca de</a></li>
+                    <li><a href="../contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <h2 class="text-a-center title">Empeza Ahora</h2>
+    </header>
+    
+    <main>
+       <form class="form">
+
+        <section class="getStarted__section space-between">
+            <h2 class="subtitle">Curso</h2>
+
+            <div class="contact_input-container">
+                <label class="getStarted__label" for="curso">Elegí tu Curso</label>
+                <select id="curso" class="getStarted__input input" required> 
+                    <option value="cardio">Cardio</option>
+                    <option value="yoga">Yoga</option>
+                    <option value="musculacion">Musculacion</option>
+                    <option value="pilates">Pilates</option>
+                </select>
+            </div>
+
+            <div class="contact_input-container">
+                <label class="getStarted__label" for="pago">Pago</label>
+                <select id="pago" class="getStarted__input input" required> 
+                    <option value="1">1 mes > ARS $5000 pesos argentinos</option>
+                    <option value="2">3 mes > ARS $12000 pesos argentinos</option>
+                    <option value="3">6 mes > ARS $22000 pesos argentinos</option>
+                    <option value="4">12 mes > ARS $45000 pesos argentinos</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="getStarted__section space-between">
+            <h2 class="subtitle">Datos Personales</h2>
+
+            <div class="contact_input-container">
+                <label class="getStarted__label" for="name">Nombre</label>
+                <input type="text" id="name" class="getStarted__input input" autocomplete="off" required>
+            </div>
+
+            <div class="contact_input-container">
+                <label class="getStarted__label" for="lastName">Apellido</label>
+                <input type="text" id="lastName" class="getStarted__input input" autocomplete="off" required>
+
+            </div>
+
+            <div class="contact_input-container">
+                <label class="getStarted__label" for="date">Fecha de Nacimiento</label>
+                <input type="date" id="date" class="getStarted__input input" autocomplete="off" required>
+            </div>
+
+            <div class="contact_input-container">
+                <label class="getStarted__label" for="email">Correo</label>
+                <input type="text" id="email" class="getStarted__input input" autocomplete="off" required>
+            </div>
+
+            <div class="contact_input-container">
+                <label class="getStarted__label" for="tel">Telefono</label>
+                <input type="tel" id="tel" class="getStarted__input input" autocomplete="off" required>
+            </div>
+
+            <div class="contact_input-container">
+                <label class="getStarted__label" for="country">País Donde vivis</label>
+                <select id="country" class="getStarted__input input" required> 
+                    <option value="Argentina">Argentina</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Guayana">Guayana</option>    
+                </select>
+            </div>
+        </section>
+
+        <section class="getStarted__section space-between">
+            <h2 class="subtitle">Referencia</h2>
+            
+            <div class="contact_input-container">
+                <p class="getStarted__label">¿Cómo nos conociste?</p>
+                <div class="radio-container">
+                    <input class="radio" type="radio" name="ref" id="recomendacion">
+                    <label class="getStarted__label" for="recomendacion">Recomendación</label>
+                </div>
+
+                <div class="radio-container">
+                    <input class="radio" type="radio" name="ref" id="redes_sociales">
+                    <label class="getStarted__label" for="redes_sociales">Redes Sociales</label>
+                </div>
+
+                <div class="radio-container">
+                    <input class="radio" type="radio" name="ref" id="empresa">
+                    <label class="getStarted__label" for="empresa">Empresa</label>
+                </div>
+
+               <div class="radio-container">
+                    <input class="radio" type="radio" name="ref" id="google">
+                    <label class="getStarted__label" for="google">Google</label>
+               </div>
+
+                <div class="radio-container">
+                    <input class="radio" type="radio" name="ref" id="otros">
+                    <label class="getStarted__label" for="otros">Otros</label>
+                </div>
+            </div>
+
+        </section>
+
+            <button class="form-btn btn2">Inscribirse</button>
+        </form>
+
+    </main>
+
+    <footer class="footer__container container">
+        <div class="footer__column-container">
+            <img src="./assets/generals/logo.svg" alt="energy logo" />
+            <a href="./about.html">About us</a>
+            <div class="networks">
+                <a href="https://facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://youtube.com/"><i class="fab fa-youtube-square"></i></a>
+                <a href="https://instagram.com/"><i class="fab fa-instagram-square"></i></a>
+            </div>
+        </div>   
+        
+        <div class="footer__column-container">
+            <h3 class="subtitle">Programs</h3>
+            <a href="./programs.html">Our Programs</a>
+            <a href="./getStarted.html">Becom a member</a>
+        </div>
+
+        <div class="footer__column-container">
+            <h3 class="subtitle">Support</h3>
+            <a href="./contact.html">Contact Us</a>
+        </div>
+    </footer>
+</body>
+</html>
