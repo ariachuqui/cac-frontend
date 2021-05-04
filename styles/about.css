@@ -26,9 +26,10 @@
     .about__main {
         margin-top: 0;
         background: var(--orange);
+        text-align: center;
     }
 
     .about__text-container {
-        text-align: center;
+        margin: 0 auto;
     }
 }
