@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/1dd9a09c54.js" crossorigin="anonymous"></script>
@@ -27,7 +29,7 @@
         <h2 class="text-a-center title">Acerca de</h2>
     </header>
     
-    <main class="about__main">
+    <main class="about__main relative">
        <div class="about__text-container">
             <p class="text">Somos Energy, una nueva y moderna forma de poder ponerte forma sin moverte de tu casa.</p>
             <p class="text">¿Cuándo empezó nuestra historia?</p>
@@ -35,7 +37,7 @@
        </div>
 
        <div class="about__women-animation women-animation absolute fadeIn-right">
-        <svg width="856" height="785" viewBox="0 0 856 785" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="856" viewBox="0 0 856 785" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="undraw_energizer_2224 1" clip-path="url(#clip0)">
             <g id="ball1">
             <path id="Vector" d="M32.4431 313.52C50.3958 313.52 64.9493 298.965 64.9493 281.01C64.9493 263.056 50.3958 248.501 32.4431 248.501C14.4904 248.501 -0.0630798 263.056 -0.0630798 281.01C-0.0630798 298.965 14.4904 313.52 32.4431 313.52Z" fill="#FCBF49"/>
@@ -108,9 +110,9 @@
     </main>
 
     <footer class="footer__container container">
-        <div class="footer__column-container">
+        <div class="flex-d-column">
             <img src="./assets/generals/logo.svg" alt="energy logo" />
-            <a href="./about.html">About us</a>
+            <a href="./about.html">Acerca de</a>
             <div class="networks">
                 <a href="https://facebook.com/"><i class="fab fa-facebook-square"></i></a>
                 <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
@@ -119,15 +121,15 @@
             </div>
         </div>   
         
-        <div class="footer__column-container">
-            <h3 class="subtitle">Programs</h3>
-            <a href="./programs.html">Our Programs</a>
-            <a href="./getStarted.html">Becom a member</a>
+        <div class="flex-d-column">
+            <h3 class="subtitle">Programas</h3>
+            <a href="./programs.html">Nuestros programas</a>
+            <a href="./getStarted.html">Empeza Ahora</a>
         </div>
 
-        <div class="footer__column-container">
-            <h3 class="subtitle">Support</h3>
-            <a href="./contact.html">Contact Us</a>
+        <div class="flex-d-column">
+            <h3 class="subtitle">Soporte</h3>
+            <a href="./contact.html">Contacto</a>
         </div>
     </footer>
 </body>

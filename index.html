@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/1dd9a09c54.js" crossorigin="anonymous"></script>
     <script src="./script/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous" defer></script>
     <title>Energy</title>
 </head>
 <body>
@@ -29,7 +33,7 @@
                 <h2 class="title">Mantenete en casa</h2>
                 <h2 class="title">Mantenete sano</h2>
                 <p class="text">Mantenete en forma incluso en tu propia casa, Energy te ayudará a mantenerte sano fácilmente cuando quieras y donde quieras.</p>
-                <a class="btn index__btn" href="./getStarted.html">Empeza ahora</a>
+                <a class="btn-g index__btn" href="./getStarted.html">Empeza ahora</a>
             </div>
 
             <div class="women-animation absolute fadeIn-right">
@@ -107,31 +111,31 @@
     </header>
 
     <main>
-        <section class="index__our-programs">
+        <section class="index__our-programs text-a-center">
             <h2 class="subtitle">Nuestros Programas</h2>
             <div class="container space-between">
-                <div class="index__program">
+                <div class="index__program flex-d-column">
                     <img src="./assets/home/ourPrograms/cardio.svg" alt="">
                     <p class="index__program-title">Cardio</p>
                     <p class="index__program-desc">Una combinación de entrenamiento cardio y ejecicios de fuerza</p>
                     <a class="btn2" href="./programs.html#cardio">Más Info</a>
                 </div>
 
-                <div class="index__program">
+                <div class="index__program flex-d-column">
                     <img src="./assets/home/ourPrograms/yoga.svg" alt="">
                     <p class="index__program-title">Yoga</p>
                     <p class="index__program-desc">Movimientos básicos de yoga para principantes</p>
                     <a class="btn2" href="./programs.html#yoga">Más Info</a>
                 </div>
 
-                <div class="index__program">
+                <div class="index__program flex-d-column">
                     <img src="./assets/home/ourPrograms/muscle.svg" alt="">
                     <p class="index__program-title">Musculación</p>
                     <p class="index__program-desc">Mejorá tu masa muscular con los ejercicios adecuados</p>
                     <a class="btn2" href="programs.html#muscle">Más Info</a>
                 </div>
 
-                <div class="index__program">
+                <div class="index__program flex-d-column">
                     <img src="./assets/home/ourPrograms/pilates.svg" alt="">
                     <p class="index__program-title">Pilates</p>
                     <p class="index__program-desc">Movimientos básicos de pilates para principiantes</p>
@@ -140,20 +144,38 @@
             </div>
         </section>
         
-        <section class="index__suscribe">
+        <section class="index__suscribe text-a-center">
             <h2 class="title">Suscribete a nuestros tips diarios</h2>
             <p class="text">¡Estos tips te ayudaran a mantenerte en forma para toda la vida!</p>
             <form action="#" class="container">
                 <input class="index__suscribe-input  input"" type="email" placeholder="Escribe tu email" required>
-                <button class="btn"> Suscribirse </button>
+                <button type="button" class="btn-g" data-bs-toggle="modal" data-bs-target="#exampleModal"> Suscribirse </button>
             </form>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Subscripción exitosa.</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ¡Gracias por suscribite! Estaremos enviadore los tips cada semana. 
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary">Ok</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
         </section>
     </main>
 
     <footer class="footer__container container">
-        <div class="footer__column-container">
+        <div class="flex-d-column">
             <img src="./assets/generals/logo.svg" alt="energy logo" />
-            <a href="./about.html">About us</a>
+            <a href="./about.html">Acerca de</a>
             <div class="networks">
                 <a href="https://facebook.com/"><i class="fab fa-facebook-square"></i></a>
                 <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
@@ -162,15 +184,15 @@
             </div>
         </div>   
         
-        <div class="footer__column-container">
-            <h3 class="subtitle">Programs</h3>
-            <a href="./programs.html">Our Programs</a>
-            <a href="./getStarted.html">Becom a member</a>
+        <div class="flex-d-column">
+            <h3 class="subtitle">Programas</h3>
+            <a href="./programs.html">Nuestros programas</a>
+            <a href="./getStarted.html">Empeza Ahora</a>
         </div>
 
-        <div class="footer__column-container">
-            <h3 class="subtitle">Support</h3>
-            <a href="./contact.html">Contact Us</a>
+        <div class="flex-d-column">
+            <h3 class="subtitle">Soporte</h3>
+            <a href="./contact.html">Contacto</a>
         </div>
     </footer>
 </body>
