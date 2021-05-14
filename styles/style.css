@@ -42,7 +42,7 @@ dl, ol, ul {
 /* =========== CLASS ============ */
 
 .background-navbar {
-    background: url(../assets/generals/navbar-background.svg) no-repeat ;
+    background: url(../assets/generals/navbar-background.svg) no-repeat;
 }
 
 .overflow-hidden {
@@ -249,8 +249,7 @@ dl, ol, ul {
 
 /* =========== NAVBAR ============ */
 .navbar__container{
-    padding-top: 1.5rem;
-    margin-bottom: 4rem;
+    padding: 1.5rem 5% 4rem;
 }
 
 .navbar__container .navbar__bars {
@@ -578,7 +577,7 @@ dl, ol, ul {
 }
 
 .about__women-animation {
-    width: 55%;
+    width: min(55%, 730px);
     top: auto;
     bottom: 5rem;
 }
@@ -707,15 +706,21 @@ dl, ol, ul {
 
     .navbar__nav-items li{
         width: 100%;
-        border-bottom: 1px solid var(--red);
     }
     
     .navbar__nav-items li a {
         color: var(--orange);
+        font-weight: 600;
+        letter-spacing:2px;
+        transition: var(--transition);
+    }
+
+    .navbar__nav-items li a:hover {
+        margin-left: .8rem;
     }
 
     .navbar__active .navbar__nav-items {
-            height: 10.5rem;
+        height: 12rem;
     }
 
     .navbar__active .navbar__bars {
